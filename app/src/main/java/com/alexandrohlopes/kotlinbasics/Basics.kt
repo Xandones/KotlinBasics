@@ -31,4 +31,11 @@ fun main() {
     var isRaining = true
     isRaining = false
     println("It is $isRaining that it's raining.")
+
+    println()
+
+    println("Chars stores single characters in a var or val (includes numbers)")
+    val firstChar = 'A'
+    println("My name starts with $firstChar")
+
 }
