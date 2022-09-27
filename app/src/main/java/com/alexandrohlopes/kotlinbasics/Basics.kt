@@ -35,7 +35,16 @@ fun main() {
     println()
 
     println("Chars stores single characters in a var or val (includes numbers)")
-    val firstChar = 'A'
-    println("My name starts with $firstChar")
+    val first = 'A'
+    println("My name starts with $first")
+
+    println()
+
+    println("Strings allows us to work with chains of characters")
+    val myStr = "Donald Duck is way cooler than Mickey Mouse."
+    var firstChar = myStr[0]
+    var lastChar = myStr[myStr.length - 1]
+    println("String: $myStr")
+    println("The string starts with $firstChar and ends with $lastChar")
 
 }
