@@ -47,4 +47,16 @@ fun main() {
     println("String: $myStr")
     println("The string starts with $firstChar and ends with $lastChar")
 
+    println()
+
+    println("Aritimetic operators: +, -, *, /, %")
+    val x : Double = 2.0
+    val y : Double = 5.0
+    var result : Double = 0.0
+    println("$x + $y = ${x + y}")
+    println("$x - $y = ${x - y}")
+    println("$x * $y = ${x * y}")
+    println("$x / $y = ${x / y}") // Since the result is 0.4 and the type is integer, it will show 0
+    println("$x % $y = ${x % y}") // Remaining value of the division.
+
 }
