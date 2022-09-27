@@ -24,4 +24,11 @@ fun main() {
     necessary to specify the type. */
     println("Maximum float value: $maxFloat")
     println("Maximum double value: $maxDouble")
+
+    println()
+
+    println("Boolean - Represents a value which is either true or false.")
+    var isRaining = true
+    isRaining = false
+    println("It is $isRaining that it's raining.")
 }
