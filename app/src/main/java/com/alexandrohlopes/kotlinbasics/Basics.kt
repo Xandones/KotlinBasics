@@ -162,6 +162,17 @@ fun main() {
         k++
     }
     print("\n")
+    // Using a string as a parameter to a While loop
+    var feltTemp = "cold"
+    var roomTemp = 10
+    while (feltTemp == "cold") {
+        if (roomTemp >= 20) {
+            feltTemp = "comfortable"
+            println("It's comfy now")
+        }
+        println("Room temperature: $roomTemp ºC | Felt temperature: $feltTemp")
+        roomTemp++
+    }
 
     println()
 
