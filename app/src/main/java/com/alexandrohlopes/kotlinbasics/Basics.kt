@@ -94,4 +94,23 @@ fun main() {
     println("After an increment, the number has a value of ${++number}") // Kotlin will increment the value as soon as asked
     println("After a decrement, the number still has a value of ${number--}") // Kotlin will do all the code in the line than do the decrement
     println("After an decrement, the number has a value of ${--number}") // Kotlin will decrement the value as soon as asked
+
+    println()
+
+    println("If statements")
+    val a = 9
+    val b = 99
+    if (a >= b) {
+        println("$a is greater or equal $b")
+    }
+    else {
+        println("$a is lower or equal $b")
+    }
+    var isRainy = false
+    if (isRainy) { // To use boolean variables statements you just need to mention its name.
+        println("It is raining outside.")
+    }
+    else {
+        println("It isn't raining outside.")
+    }
 }
