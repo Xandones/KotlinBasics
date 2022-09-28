@@ -113,4 +113,43 @@ fun main() {
     else {
         println("It isn't raining outside.")
     }
+
+    println()
+
+    println("When statements")
+    val season = 4
+    println(season)
+    // Single values comparison
+    when (season) {
+        1 -> println("Spring")
+        2 -> println("Summer")
+        3 -> { // When also supports multiple lines of code
+            println("Fall")
+            println("Autumn")
+        }
+        4 -> println("Winter")
+        else -> println("Invalid season")
+    }
+    // Comparison between intervals
+    val month = 1
+    when (month) {
+        12,1,2 -> println("Summer") // Beware: the only way of creating a backwards interval is this one.
+        in 3..5 -> {
+            println("Fall")
+            println("Autumn")
+        }
+        in 6..8 -> println("Winter")
+        in 9..11 -> println("Spring")
+        else -> println("Invalid season")
+    }
+    // Checking data types using When
+    var z : Any = true
+    when(z) {
+        is Int -> println("$z is an Integer")
+        is Double -> println("$z is a Double")
+        is String -> println("$z is a String")
+        else -> println("$z is none of the above")
+    }
+
+
 }
