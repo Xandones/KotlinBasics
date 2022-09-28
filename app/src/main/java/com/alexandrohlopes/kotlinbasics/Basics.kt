@@ -151,5 +151,16 @@ fun main() {
         else -> println("$z is none of the above")
     }
 
+    println()
+
+    println("While statements - beware: if the condition is always true the loop will become infinite")
+    var k = 0
+    while (k <= 10) {
+        if (k % 2 == 0) {
+            print("$k ")
+        }
+        k++
+    }
+    print("\n")
 
 }
