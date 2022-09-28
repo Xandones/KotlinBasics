@@ -183,4 +183,20 @@ fun main() {
         k++
     } while (k <= 10)
     print("\n")
+
+    println()
+
+    println("For loops")
+    for (num in 1..10) {
+        print("$num ")
+    }
+    print("\n")
+    for (num in 1 until 10) { // Stops 1 step before the condition is achieved
+        print("$num ")
+    }
+    print("\n")
+    for (x in 10 downTo 1 step 2) { // Countdowns from 10 to 0 two numbers at a time
+        print("$x ")
+    }
+    println()
 }
