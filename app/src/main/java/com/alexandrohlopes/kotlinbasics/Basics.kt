@@ -163,4 +163,13 @@ fun main() {
     }
     print("\n")
 
+    println()
+
+    println("Do while statements - the lines of code inside a Do While loop will run at least once, even if the condition is false ")
+    k = 15
+    do {
+        print("$k ")
+        k++
+    } while (k <= 10)
+    print("\n")
 }
