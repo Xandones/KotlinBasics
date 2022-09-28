@@ -49,14 +49,25 @@ fun main() {
 
     println()
 
-    println("Aritimetic operators: +, -, *, /, %")
-    val x : Double = 2.0
-    val y : Double = 5.0
-    var result : Double = 0.0
+    println("Arithmetic operators: +, -, *, /, %")
+    val x = 2.0
+    val y = 5.0
     println("$x + $y = ${x + y}")
     println("$x - $y = ${x - y}")
     println("$x * $y = ${x * y}")
-    println("$x / $y = ${x / y}") // Since the result is 0.4 and the type is integer, it will show 0
+    println("$x / $y = ${x / y}") // Since the result is 0.4 and the type is integer, it will show 0 if the type of the variable is integer.
     println("$x % $y = ${x % y}") // Remaining value of the division.
 
+    println()
+
+    println("Comparison operators: ==, !=, >, <, >=, <=")
+    val isEqual = 5==3 // If you declare a variable as a comparison it will be a boolean type variable.
+    println("Is 5 equal 3? $isEqual")
+    val isNotEqual = 5!=5
+    println("Is 5 different from 5? $isNotEqual")
+    println("Is 5 greater than 3? ${5 > 3}")
+    println("Is -5 greater than 3? ${-5 > 3}")
+    println("Is -5 greater or equal 3? ${-5 >= 3}")
+    println("Is 5 lower than 3? ${5 < 3}")
+    println("Is 5 lower or equal 3? ${5 <= 3}")
 }
