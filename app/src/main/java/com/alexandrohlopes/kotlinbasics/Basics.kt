@@ -70,4 +70,28 @@ fun main() {
     println("Is -5 greater or equal 3? ${-5 >= 3}")
     println("Is 5 lower than 3? ${5 < 3}")
     println("Is 5 lower or equal 3? ${5 <= 3}")
+
+    println()
+
+    println("Assignment operators: +=, -=, *=, /=, %=")
+    var number = 5
+    println("The number is $number")
+    number += 3
+    println("The number plus 3 is equal $number")
+    number -= 4
+    println("The previous number minus 4 is equal $number")
+    number *= 9
+    println("The previous number multiplied by 9 is equal $number")
+    number /= 3
+    println("The previous number divided by 3 is equal $number")
+    number %= 2
+    println("The modulus of the division of the previous number by 2 is $number") // 12 divided by 2 has no remaining
+
+    println()
+
+    println("Increment and decrement operators (++ and --)")
+    println("After an increment, the number still has a value of ${number++}") // Kotlin will do all the code in the line than do the increment
+    println("After an increment, the number has a value of ${++number}") // Kotlin will increment the value as soon as asked
+    println("After a decrement, the number still has a value of ${number--}") // Kotlin will do all the code in the line than do the decrement
+    println("After an decrement, the number has a value of ${--number}") // Kotlin will decrement the value as soon as asked
 }
