@@ -215,4 +215,19 @@ fun main() {
         print("$i ")
     }
     println("End of the For loop")
+
+    println()
+
+    println("Functions")
+    myFunction()
+    myFunction()
+    println("${ addUp(5, 3) }")
+}
+
+fun myFunction() {
+    println("This came from an additional function.")
+}
+
+fun addUp(a : Int, b : Int) : Int {
+    return a + b
 }
