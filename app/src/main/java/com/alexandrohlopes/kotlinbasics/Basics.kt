@@ -222,6 +222,22 @@ fun main() {
     myFunction()
     myFunction()
     println("${ addUp(5, 3) }")
+
+    println()
+
+    println("Nullables")
+    var name : String = "Alexandro" // If you set this variable as a null, Android Studio will show a compilation error.
+    var nullableName : String? = "Jones"
+    nullableName = null
+
+    println("Name is $name")
+    println("NullableName is $nullableName")
+    println("Name is ${name.lowercase()}")
+    println("Size of 'name' : ${name.length}")
+    println("Size of 'nullableName' : ${nullableName?.length}")
+    // ?: Elvis operator
+    name = nullableName ?: "Guest"
+    println("Name is $name")
 }
 
 fun myFunction() {
