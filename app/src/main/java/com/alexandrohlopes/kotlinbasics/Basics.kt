@@ -199,4 +199,20 @@ fun main() {
         print("$x ")
     }
     println()
+
+    println()
+
+    println("Break and Continue")
+    for (i in 1 until 20) {
+        if (i / 2 == 5)
+            continue // Ignores every step when the specified step occurs and goes to the next one.
+        /*
+            10 / 2 == 5
+            11 / 2 == 5.5 -> This one is rounded to 5
+         */
+        if (i / 2 == 15)
+           break // After the For loop reaches 10 it will stop the loop.
+        print("$i ")
+    }
+    println("End of the For loop")
 }
